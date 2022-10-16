@@ -15,7 +15,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 # 初始化超级鹰
-chaojiying = Chaojiying_Client('sanmaoliu', 'zxj5840119', '940082')
+chaojiying = Chaojiying_Client('用户名', '密码', '验证码类型')
 
 option = Options()
 option.add_argument('--disable-blink-features=AutomationControlled')
@@ -25,8 +25,8 @@ def web_driver():
 
     web.get("https://kyfw.12306.cn/otn/resources/login.html")
     time.sleep(2)
-    web.find_element(By.XPATH,'//*[@id="J-userName"]').send_keys("15635414062")
-    web.find_element(By.XPATH,'//*[@id="J-password"]').send_keys('zxj5840119_')
+    web.find_element(By.XPATH,'//*[@id="J-userName"]').send_keys("账号")
+    web.find_element(By.XPATH,'//*[@id="J-password"]').send_keys('密码')
     web.find_element(By.XPATH,'//*[@id="J-login"]').click()
     time.sleep(5)
     btn = web.find_element(By.XPATH,'//*[@id="nc_1__scale_text"]/span')
