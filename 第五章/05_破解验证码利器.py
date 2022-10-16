@@ -14,8 +14,7 @@ from selenium.webdriver.common.keys import Keys
 
 import time
 
-# 初始化超级鹰
-chaojiying = Chaojiying_Client('用户名', '密码', '验证码类型')
+
 
 option = Options()
 option.add_argument('--disable-blink-features=AutomationControlled')
