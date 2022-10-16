@@ -13,7 +13,7 @@ from chaojiying import Chaojiying_Client
 import time
 
 
-chaojiying = Chaojiying_Client('sanmaoliu', 'zxj5840119', '940082')
+chaojiying = Chaojiying_Client('用户名', '密码', '验证码类型')
 
 web = Chrome()
 
@@ -23,8 +23,8 @@ def chj():
     dic = chaojiying.PostPic(img,1902)
     verify_code = dic['pic_str']
 
-    web.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[1]/input').send_keys('sanmaoliu')
-    web.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[2]/input').send_keys('zxj5840119')
+    web.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[1]/input').send_keys('用户名')
+    web.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[2]/input').send_keys('密码')
     web.find_element(By.XPATH,'/html/body/div[3]/div/div[3]/div[1]/form/p[3]/input').send_keys(verify_code)
 
     time.sleep(3)
