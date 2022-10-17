@@ -17,6 +17,7 @@ res = requests.get(url,header)
 # print(res.text)
 html = etree.HTML(res.text)
 
+# //*[@id="__layout"]/div/div[3]/div/div[3]/div[4]/div[1]/div[1]/div
 # divs = html.xpath('//*[@id="__layout"]/div/div[3]/div/div[3]/div[4]/div[1]/div/div')
 divs = html.xpath('//*[@id="__layout"]/div/div[3]/div/div[3]/div[4]/div[1]/div')
 # print(divs)

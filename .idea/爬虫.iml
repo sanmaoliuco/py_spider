@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/第五章" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/第三章/video" />
       <excludeFolder url="file://$MODULE_DIR$/第二章/img" />
+      <excludeFolder url="file://$MODULE_DIR$/第五章/data" />
       <excludeFolder url="file://$MODULE_DIR$/第四章/mp4" />
       <excludeFolder url="file://$MODULE_DIR$/第四章/mp4_1" />
       <excludeFolder url="file://$MODULE_DIR$/第四章/纸牌屋" />
